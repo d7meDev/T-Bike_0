@@ -1,0 +1,374 @@
+*{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   box-sizing: border-box;
+   padding: 0px;
+   margin: 0px;
+   list-style-type: none;
+}
+body{
+   background-image: url(img/grage.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+
+
+   
+   
+}
+
+.header{
+   background-image: url(img/header_background.jpg);
+   
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   padding: 10px;
+
+   animation-name: boxHighlight ;
+   animation-duration: 8s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+  
+}
+
+
+
+ .header .navbarButton a .fa-solid.fa-bars.fa-2x{
+    color: rgb(255, 255, 255);
+    animation-name: textHighlight ;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.navbarButton:hover{
+    transform: scale(1.2,1.2);
+}
+.navbarButton a .fa-solid.fa-bars.fa-2x:active{
+    color: rgb(201, 201, 201);
+
+}
+
+.navbarButton:active .navbar{
+    display: block;
+}
+
+
+
+
+
+
+
+.header .title {
+    
+    text-align: center;
+    font-size: 2em;
+    transform: translateX(20px);
+    
+
+}
+
+.header .title h1 a{
+    
+    color: rgb(255, 255, 255);
+    animation-name: textHighlight ;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    text-decoration: none;
+}
+.title:hover{
+    transform: scale(1.2,1.2) translateX(15px);
+}
+.title h1 a:active{
+    color: rgb(201, 201, 201);
+
+}
+
+
+
+
+.header .sign{
+    background-color: rgb(255, 255, 255);
+  
+   
+    width: 80px;
+    height: 30px;
+   
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 25px;
+    animation-name: boxHighlight ;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color: rgb(0, 0, 0);
+
+}
+
+.sign:hover{
+    transform: scale(1.2,1.2);
+}
+.sign:active{
+    background-color: rgb(201, 201, 201);
+
+}
+
+.navbar{
+
+    display: none;
+    background-color: rgb(0, 0, 0);
+  
+    
+    animation-name: boxHighlight ;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+   
+  
+
+}
+
+.navbar ul {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 1px;
+}
+
+.navbar ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 3em;
+}
+.navbar ul li {
+    margin-bottom: 10px;
+}
+.navbar ul li:hover{
+    background-color: rgb(34, 34, 34);
+}
+
+.navbar ul li:last-child{
+    margin-bottom: 0px;
+}
+
+.intro{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    min-height: 40vh;
+    width: auto;
+    
+
+    
+    
+    padding: 10px;
+    flex-wrap: nowrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+    column-gap: 2em;
+
+    animation-name: boxHighlight ;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.intro img{
+    height: auto;
+    width: 50%;
+    border-radius:60px ;
+
+    
+    
+    
+}
+
+.intro p{
+    animation-name: textHighlight ;
+    font-size: 2em;
+}
+
+.rent{
+
+    margin-top: 20px;
+    background-color: rgb(238, 238, 238);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    row-gap: 1em;
+    column-gap: 3em;
+
+    flex-wrap: wrap;
+    padding: 10px;
+    
+    animation-name: boxHighlight ;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.rent .Bike{
+    position: relative;
+    height: 400px;
+    width: 240px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    align-items: center;
+    border-radius: 35px;
+    border: 1px outset black;
+    border-style:  outset;
+    background-color: rgb(238, 238, 238);
+    
+}
+
+.rent .Bike img{
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    width: 100%;
+    border-bottom: 1px solid black;
+
+    
+}
+
+.rent .Bike .text{
+    font-size: 1.2em;
+    font-weight:  bold;
+    padding: 2px;
+    
+}
+
+.rent .Bike .buttonConatiner{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    top: 70%;
+    height: 100px;
+    width: 100%;
+
+    
+    
+}
+
+.rent .Bike .buttonConatiner a{
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    transform: translateY(-20%);
+    border-radius: 40px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(243, 243, 243);
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size:3em;
+    text-decoration: none;
+}
+
+.rent .Bike .buttonConatiner a:hover{
+    animation: aHover 0.1s linear forwards;
+}
+
+.rent .Bike .buttonConatiner a:active{
+      background-color: rgb(190, 190, 190);
+}
+
+.footer{
+    
+    
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+
+
+}
+
+.footer .rights{
+    color: rgb(255, 255, 255);
+
+}
+
+.footer .contact{
+    
+    display: flex;
+    align-items: flex-end;
+    column-gap: 1em;
+}
+
+.footer .contact ul{
+    display: flex;
+    column-gap: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes textHighlight {
+    
+    50%{text-shadow: 1px 1px 20px rgb(255, 255, 255);}
+}
+
+@keyframes boxHighlight {
+    
+    50%{box-shadow: 1px 1px 20px rgb(255, 255, 255);}
+}
+
+@keyframes aHover {
+    100%{
+        transform: scale(1.1,1.1) translateY(-10px);
+
+    }
+}
+
+@media screen  and (max-width:800px) {
+    .intro{
+       flex-direction: column-reverse;
+       justify-content: center;
+       row-gap: 1em;
+       padding: 15px;
+    }
+
+    .intro img{
+        
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        
+        
+    }
+
+    .intro p{
+        font-size: 1.3em;
+    }
+}
+
+
+
+
+
+

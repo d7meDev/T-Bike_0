@@ -1,0 +1,185 @@
+.container{
+    margin-top: 10px;
+    background-color: rgb(238, 238, 238);
+    display:flex;
+    padding: 10px;
+    column-gap: 2em;
+    
+
+}
+
+.container img{
+   min-height:100%;
+    width: 60%;
+    border-radius: 35px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.container .infoAndRent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3em;
+    overflow: hidden;
+}
+
+.container .infoAndRent .info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1em;
+
+}
+
+.container .infoAndRent .info ul {
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 3em;
+}
+
+.container .infoAndRent .info ul li > div{
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    background-color: rgb(226, 226, 226) ;
+    border-radius: 35px;
+    overflow: hidden;
+    border: 1px solid;
+    
+  
+}
+
+.container .infoAndRent .info ul li .speed div{
+    height: 100%;
+    background-color: rgb(255, 27, 27);
+    animation: bar_speed 1s linear  forwards;
+}
+
+.container .infoAndRent .info ul li div p{
+    position: absolute;
+    z-index: 1;
+    margin-left: 3px;
+    font-size: 1.1em;
+    font-weight: bold;
+
+    
+
+    
+
+}
+
+.container .infoAndRent .info ul li .fuel div{
+    height: 100%;
+    background-color: rgb(255, 27, 27);
+    animation: bar_fuel 1s linear  forwards;
+}
+.container .infoAndRent .info ul li .range div{
+    height: 100%;
+    background-color: rgb(255, 27, 27);
+    animation: bar_range 1s linear  forwards;
+}
+
+.container .infoAndRent .rent{
+    position: relative;
+    width: 100%;
+    background-color: rgb(39, 39, 39);
+    border: 1px outset rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    align-items: center;
+   padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.container .infoAndRent .rent h2{
+    font-size: 200%;
+}
+
+.container .infoAndRent .rent .input{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    column-gap: 1em;
+    row-gap: 1em;
+    
+    
+}
+
+
+
+.container .infoAndRent .rent .input input{
+    border-radius: 20px;
+    width: 80%;
+    border: 1px solid rgb(255, 0, 0);
+}
+.container .infoAndRent .rent .input select{
+    border-radius: 20px;
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.container .infoAndRent .rent .input p{
+    font-size: 1.5vw;
+}
+
+.container .infoAndRent .rent button{
+    border-radius: 35px;
+    padding: 5px;
+    width: 120px;
+    font-size: 1em;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 0, 0);
+    
+    
+}
+
+.container .infoAndRent .rent button:hover{
+    animation: bHover 0.1s linear forwards;
+}
+.container .infoAndRent .rent button:active{
+    background-color: rgb(190, 190, 190);
+
+}
+
+
+
+
+
+@keyframes bar_speed {
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(-40%);}
+}
+
+@keyframes bar_fuel {
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(-60%);}
+}
+@keyframes bar_range {
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(-44%);}
+}
+
+@keyframes bHover {
+    100%{
+        transform: scale(1.1,1.1) translateY(-10px);
+
+    }
+}
+
+@media screen  and (max-width:800px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+

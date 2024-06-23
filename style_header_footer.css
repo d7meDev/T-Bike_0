@@ -1,0 +1,194 @@
+*{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+ }
+ body{
+    background-image: url(img/grage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+ 
+ 
+    
+    
+ }
+ 
+ .header{
+    background-image: url(img/header_background.jpg);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+ 
+    animation-name: boxHighlight ;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+   
+ }
+ 
+ 
+ 
+  .header .navbarButton a .fa-solid.fa-bars.fa-2x{
+     color: rgb(255, 255, 255);
+     animation-name: textHighlight ;
+     animation-duration: 8s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+ }
+ 
+ .navbarButton:hover{
+     transform: scale(1.2,1.2);
+ }
+ .navbarButton a .fa-solid.fa-bars.fa-2x:active{
+     color: rgb(201, 201, 201);
+ 
+ }
+ 
+ .navbarButton:active .navbar{
+     display: block;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ .header .title {
+     
+     text-align: center;
+     font-size: 2em;
+     transform: translateX(20px);
+     
+ 
+ }
+ 
+ .header .title h1 a{
+     
+     color: rgb(255, 255, 255);
+     animation-name: textHighlight ;
+     animation-duration: 8s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     text-decoration: none;
+ }
+ .title:hover{
+     transform: scale(1.2,1.2) translateX(15px);
+ }
+ .title h1 a:active{
+     color: rgb(201, 201, 201);
+ 
+ }
+ 
+ 
+ 
+ 
+ .header .sign{
+     background-color: rgb(255, 255, 255);
+   
+    
+     width: 80px;
+     height: 30px;
+    
+     text-align: center;
+     text-decoration: none;
+     font-size: 1.3em;
+     border-radius: 25px;
+     animation-name: boxHighlight ;
+     animation-duration: 8s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     color: rgb(0, 0, 0);
+ 
+ }
+ 
+ .sign:hover{
+     transform: scale(1.2,1.2);
+ }
+ .sign:active{
+     background-color: rgb(201, 201, 201);
+ 
+ }
+ 
+ .navbar{
+ 
+     display: none;
+     background-color: rgb(0, 0, 0);
+   
+     
+     animation-name: boxHighlight ;
+     animation-duration: 8s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+ 
+    
+   
+ 
+ }
+ 
+ .navbar ul {
+     display: block;
+     text-align: center;
+     width: 100%;
+     padding: 1px;
+ }
+ 
+ .navbar ul li a{
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+     font-size: 3em;
+ }
+ .navbar ul li {
+     margin-bottom: 10px;
+ }
+ .navbar ul li:hover{
+     background-color: rgb(34, 34, 34);
+ }
+ 
+ .navbar ul li:last-child{
+     margin-bottom: 0px;
+ }
+
+ .footer{
+    
+   
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+
+
+}
+
+ .footer .rights{
+    color: rgb(255, 255, 255);
+
+}
+
+.footer .contact{
+    
+    display: flex;
+    align-items: flex-end;
+    column-gap: 1em;
+}
+
+.footer .contact ul{
+    display: flex;
+    column-gap: 1em;
+}
+
+@keyframes textHighlight {
+    
+    50%{text-shadow: 1px 1px 20px rgb(255, 255, 255);}
+}
+
+@keyframes boxHighlight {
+    
+    50%{box-shadow: 1px 1px 20px rgb(255, 255, 255);}
+}
